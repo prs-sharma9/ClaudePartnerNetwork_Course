@@ -1,0 +1,23 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Training Recovery\n\nHere is a one-day meal plan for an athlete aiming to support marathon training recovery with high carbohydrate intake and proper meal timing:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (110g), Fat (80g), Carbs (440g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), dried raisins (40g), and sunflower seeds (20g). Whole milk (240ml).\n  * Protein: 16g, Fat: 12g, Carbs: 85g\n\n* **Pre-Long Run Snack (9:30 AM - 1.5 hours before run):** White bread (80g) with honey (30g) and jam (25g). Orange juice (250ml).\n  * Protein: 5g, Fat: 3g, Carbs: 80g\n\n* **Post-Long Run Recovery (2:00 PM - within 30 minutes after run):** Chocolate milk (500ml) with a banana (120g) and rice cakes (50g) with jam (20g).\n  * Protein: 18g, Fat: 8g, Carbs: 120g\n\n* **Lunch (3:30 PM):** Vegetarian pasta (120g dry weight) with marinara sauce (200g), chickpeas (150g canned), zucchini (100g), and olive oil (15ml). Whole wheat bread (60g).\n  * Protein: 22g, Fat: 12g, Carbs: 95g\n\n* **Afternoon Snack (5:30 PM):** Greek yogurt (200g, plain) with granola (50g), blueberries (100g), and honey (15g).\n  * Protein: 18g, Fat: 8g, Carbs: 55g\n\n* **Dinner (7:30 PM):** Lentil and vegetable curry (300g) with basmati rice (100g cooked), spinach (80g), and coconut milk (100ml). Naan bread (80g).\n  * Protein: 22g, Fat: 20g, Carbs: 95g\n\n* **Evening Snack (9:30 PM):** Rice pudding (200g) made with milk and raisins.\n  * Protein: 9g, Fat: 7g, Carbs: 60g\n\n---\n\n## Key Nutritional Considerations:\n\nThis meal plan emphasizes **high carbohydrate intake** (440g total, approximately 6.5g/kg) for optimal glycogen replenishment during marathon training recovery. The strategic timing of meals around your long run maximizes performance and recovery:\n\n- **Pre-run fueling** provides easily digestible carbs to sustain energy\n- **Post-run recovery meal** within 30 minutes replenishes glycogen and supports muscle repair\n- **Plant-based proteins** from legumes (lentils, chickpeas), dairy (milk, yogurt), and whole grains support muscle adaptation\n- **All foods are nut-free and vegetarian**, meeting your dietary requirements\n\n**Hydration reminder:** Drink water throughout the day, especially before, during, and after your long run. Aim for 500-750ml of water per hour during running.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "68 kg",
+        "goal": "Marathon training recovery with high carbohydrate intake and proper meal timing around long run",
+        "restrictions": "Vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan covers full day with at least 4 meals/snacks spread across morning, pre-training, post-training, and evening",
+        "Includes high carbohydrate content appropriate for endurance athlete (approximately 8-10g per kg body weight daily)",
+        "Respects vegetarian diet and excludes nuts",
+        "Provides specific timing recommendations for meals relative to training session"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and recovery nutrition spread across multiple meals with specific timing around training sessions"
+    },
+    "score": 8,
+    "reasoning": "The solution comprehensively meets all mandatory requirements with precise daily totals, detailed macronutrient breakdowns, and specific meal timing. It successfully addresses all secondary criteria including meal distribution, vegetarian restrictions, nut exclusion, and strategic pre/post-training nutrition. The carbohydrate intake at 6.5g/kg is slightly conservative compared to the 8-10g/kg criterion, but this is defensible for a recovery-focused plan rather than peak training. The presentation is clear and professional. Minor weaknesses in hydration detail and explicit timing assumptions do not undermine the core quality of the meal plan."
+  }
+]

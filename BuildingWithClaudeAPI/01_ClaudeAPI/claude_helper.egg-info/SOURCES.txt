@@ -1,0 +1,8 @@
+setup.py
+claude_helper/__init__.py
+claude_helper/helpers.py
+claude_helper.egg-info/PKG-INFO
+claude_helper.egg-info/SOURCES.txt
+claude_helper.egg-info/dependency_links.txt
+claude_helper.egg-info/requires.txt
+claude_helper.egg-info/top_level.txt

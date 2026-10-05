@@ -1,0 +1,18 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training recovery with high carbohydrate intake and proper meal timing around long run",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers full day with at least 4 meals/snacks spread across morning, pre-training, post-training, and evening",
+      "Includes high carbohydrate content appropriate for endurance athlete (approximately 8-10g per kg body weight daily)",
+      "Respects vegetarian diet and excludes nuts",
+      "Provides specific timing recommendations for meals relative to training session"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and recovery nutrition spread across multiple meals with specific timing around training sessions"
+  }
+]

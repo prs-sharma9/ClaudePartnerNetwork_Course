@@ -1,0 +1,196 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">1</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">8.0 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a professional endurance athlete (marathon runner) requiring high carbohydrate intake and recovery nutrition spread across multiple meals with specific timing around training sessions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 68 kg<br><strong>goal:</strong> Marathon training recovery with high carbohydrate intake and proper meal timing around long run<br><strong>restrictions:</strong> Vegetarian, no nuts</td>
+                <td class="criteria">• Meal plan covers full day with at least 4 meals/snacks spread across morning, pre-training, post-training, and evening<br>• Includes high carbohydrate content appropriate for endurance athlete (approximately 8-10g per kg body weight daily)<br>• Respects vegetarian diet and excludes nuts<br>• Provides specific timing recommendations for meals relative to training session</td>
+                <td class="output"><pre># One-Day Meal Plan for Marathon Training Recovery
+
+Here is a one-day meal plan for an athlete aiming to support marathon training recovery with high carbohydrate intake and proper meal timing:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (110g), Fat (80g), Carbs (440g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), dried raisins (40g), and sunflower seeds (20g). Whole milk (240ml).
+  * Protein: 16g, Fat: 12g, Carbs: 85g
+
+* **Pre-Long Run Snack (9:30 AM - 1.5 hours before run):** White bread (80g) with honey (30g) and jam (25g). Orange juice (250ml).
+  * Protein: 5g, Fat: 3g, Carbs: 80g
+
+* **Post-Long Run Recovery (2:00 PM - within 30 minutes after run):** Chocolate milk (500ml) with a banana (120g) and rice cakes (50g) with jam (20g).
+  * Protein: 18g, Fat: 8g, Carbs: 120g
+
+* **Lunch (3:30 PM):** Vegetarian pasta (120g dry weight) with marinara sauce (200g), chickpeas (150g canned), zucchini (100g), and olive oil (15ml). Whole wheat bread (60g).
+  * Protein: 22g, Fat: 12g, Carbs: 95g
+
+* **Afternoon Snack (5:30 PM):** Greek yogurt (200g, plain) with granola (50g), blueberries (100g), and honey (15g).
+  * Protein: 18g, Fat: 8g, Carbs: 55g
+
+* **Dinner (7:30 PM):** Lentil and vegetable curry (300g) with basmati rice (100g cooked), spinach (80g), and coconut milk (100ml). Naan bread (80g).
+  * Protein: 22g, Fat: 20g, Carbs: 95g
+
+* **Evening Snack (9:30 PM):** Rice pudding (200g) made with milk and raisins.
+  * Protein: 9g, Fat: 7g, Carbs: 60g
+
+---
+
+## Key Nutritional Considerations:
+
+This meal plan emphasizes **high carbohydrate intake** (440g total, approximately 6.5g/kg) for optimal glycogen replenishment during marathon training recovery. The strategic timing of meals around your long run maximizes performance and recovery:
+
+- **Pre-run fueling** provides easily digestible carbs to sustain energy
+- **Post-run recovery meal** within 30 minutes replenishes glycogen and supports muscle repair
+- **Plant-based proteins** from legumes (lentils, chickpeas), dairy (milk, yogurt), and whole grains support muscle adaptation
+- **All foods are nut-free and vegetarian**, meeting your dietary requirements
+
+**Hydration reminder:** Drink water throughout the day, especially before, during, and after your long run. Aim for 500-750ml of water per hour during running.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution comprehensively meets all mandatory requirements with precise daily totals, detailed macronutrient breakdowns, and specific meal timing. It successfully addresses all secondary criteria including meal distribution, vegetarian restrictions, nut exclusion, and strategic pre/post-training nutrition. The carbohydrate intake at 6.5g/kg is slightly conservative compared to the 8-10g/kg criterion, but this is defensible for a recovery-focused plan rather than peak training. The presentation is clear and professional. Minor weaknesses in hydration detail and explicit timing assumptions do not undermine the core quality of the meal plan.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

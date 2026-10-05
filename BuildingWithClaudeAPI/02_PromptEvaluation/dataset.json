@@ -1,0 +1,26 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/file.txt') and extract only the bucket name",
+    "format": "regex",
+    "solution_criteria": [
+      "The regex must correctly match and capture bucket names from S3 URIs",
+      "The solution must handle S3 URIs with and without trailing paths"
+    ]
+  },
+  {
+    "task": "Write a Python function that takes an AWS CloudWatch log event and extracts the timestamp and message fields",
+    "format": "python",
+    "solution_criteria": [
+      "The function must parse the CloudWatch event structure and return timestamp and message as separate values",
+      "The function should handle missing fields gracefully"
+    ]
+  },
+  {
+    "task": "Create a JSON object representing an AWS IAM policy that allows a user to read objects from a specific S3 bucket named 'audit-logs'",
+    "format": "json",
+    "solution_criteria": [
+      "The JSON must follow valid IAM policy structure with Effect, Action, and Resource fields",
+      "The policy must specifically allow s3:GetObject action on the 'audit-logs' bucket"
+    ]
+  }
+]

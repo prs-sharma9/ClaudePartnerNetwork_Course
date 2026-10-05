@@ -1,0 +1,39 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "This study examines neuroplasticity in the aging brain, focusing on how cognitive training interventions can enhance synaptic density and promote neural regeneration. We investigate memory consolidation processes, particularly the role of the hippocampus in encoding episodic memories, while also analyzing how executive function deficits emerge from prefrontal cortex deterioration. Our findings demonstrate that aerobic exercise strengthens both memory systems and executive function through increased brain-derived neurotrophic factor (BDNF) production. Additionally, we explore how cognitive training and physical exercise interact to amplify neuroplasticity, revealing that combined interventions produce synergistic effects on neural adaptation and functional recovery in aging populations."
+    },
+    "solution_criteria": [
+      "Extracts distinct main topics without redundancy (e.g., 'memory consolidation' and 'hippocampus' should not both appear as separate topics if one is a component of the other)",
+      "Identifies all major research focus areas mentioned in the passage",
+      "Avoids over-segmentation by grouping closely related concepts (e.g., cognitive training and physical exercise as intervention-related topics rather than separating every mechanism mentioned)"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a passage containing overlapping and hierarchical topics to verify the prompt correctly identifies distinct main topics without redundancy or over-segmentation"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the intersection of climate change adaptation and socioeconomic resilience in coastal communities by employing mixed-methods research combining quantitative hydrological modeling with qualitative ethnographic interviews. We analyzed sea-level rise projections using machine learning algorithms trained on satellite data spanning three decades, while simultaneously conducting 47 in-depth interviews with local stakeholders to understand how cultural practices and economic structures shape adaptive capacity. Our findings reveal that infrastructure vulnerability correlates not only with physical exposure to tidal patterns and storm surge intensity, but also with institutional capacity, social capital distribution, and access to technological resources. We propose a novel framework integrating geospatial analysis with community-based knowledge systems, demonstrating that effective adaptation requires bridging natural science understanding of coastal processes with social science insights into governance, equity, and behavioral responses to environmental risk."
+    },
+    "solution_criteria": [
+      "Extraction includes topics from natural sciences (sea-level rise, hydrological modeling, storm surge, satellite data, tidal patterns)",
+      "Extraction includes topics from social sciences (socioeconomic resilience, social capital, equity, governance, cultural practices, behavioral responses)",
+      "Extraction includes methodological topics (mixed-methods research, quantitative modeling, qualitative interviews, machine learning, geospatial analysis)",
+      "All extracted topics are formatted as a JSON array of strings"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with an interdisciplinary passage mixing natural sciences, social sciences, and methodology discussions to ensure the prompt can extract topics across diverse academic domains"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The proliferation of machine learning algorithms in clinical diagnostics has fundamentally altered medical practice, yet their deployment raises critical questions about interpretability and trust. While deep neural networks achieve 94% accuracy in detecting diabetic retinopathy from retinal images, clinicians struggle to understand which visual features drive these predictions, creating a gap between algorithmic performance and clinical utility. This opacity becomes particularly problematic when considering patient autonomy\u2014physicians cannot adequately explain to patients why a diagnosis was recommended, undermining informed consent. Furthermore, the reliance on training data predominantly sourced from Western populations introduces systematic biases that degrade model performance for underrepresented demographic groups, perpetuating existing healthcare disparities. The tension between computational efficiency and transparency suggests that future clinical AI systems must balance accuracy with explainability, though technical solutions remain nascent."
+    },
+    "solution_criteria": [
+      "Extracts explicit topics directly mentioned (e.g., 'machine learning', 'clinical diagnostics', 'deep neural networks', 'diabetic retinopathy')",
+      "Identifies implicit/inferred conceptual themes requiring inference (e.g., 'algorithmic transparency', 'healthcare equity', 'informed consent', 'bias in AI')",
+      "Distinguishes between surface-level technical details and deeper thematic concerns"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a passage containing implicit topics that require inference versus explicit topic mentions to evaluate whether the prompt extracts only surface-level or deeper conceptual themes"
+  }
+]

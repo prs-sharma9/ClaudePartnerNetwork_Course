@@ -1,0 +1,54 @@
+[
+  {
+    "output": "```json\n[\n  \"neuroplasticity\",\n  \"aging brain\",\n  \"cognitive training interventions\",\n  \"synaptic density\",\n  \"neural regeneration\",\n  \"memory consolidation\",\n  \"hippocampus\",\n  \"episodic memories\",\n  \"executive function\",\n  \"prefrontal cortex\",\n  \"aerobic exercise\",\n  \"brain-derived neurotrophic factor (BDNF)\",\n  \"physical exercise\",\n  \"neural adaptation\",\n  \"functional recovery\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study examines neuroplasticity in the aging brain, focusing on how cognitive training interventions can enhance synaptic density and promote neural regeneration. We investigate memory consolidation processes, particularly the role of the hippocampus in encoding episodic memories, while also analyzing how executive function deficits emerge from prefrontal cortex deterioration. Our findings demonstrate that aerobic exercise strengthens both memory systems and executive function through increased brain-derived neurotrophic factor (BDNF) production. Additionally, we explore how cognitive training and physical exercise interact to amplify neuroplasticity, revealing that combined interventions produce synergistic effects on neural adaptation and functional recovery in aging populations."
+      },
+      "solution_criteria": [
+        "Extracts distinct main topics without redundancy (e.g., 'memory consolidation' and 'hippocampus' should not both appear as separate topics if one is a component of the other)",
+        "Identifies all major research focus areas mentioned in the passage",
+        "Avoids over-segmentation by grouping closely related concepts (e.g., cognitive training and physical exercise as intervention-related topics rather than separating every mechanism mentioned)"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a passage containing overlapping and hierarchical topics to verify the prompt correctly identifies distinct main topics without redundancy or over-segmentation"
+    },
+    "score": 6,
+    "reasoning": "The solution successfully meets all mandatory requirements with valid JSON formatting and topic-only strings. However, it violates the secondary criteria regarding redundancy and over-segmentation. The criteria explicitly state that hierarchically related concepts (like 'memory consolidation' and 'hippocampus') should not both appear as separate topics, and closely related concepts should be grouped rather than separated. The solution lists 15 items when a more refined extraction following the secondary criteria would consolidate related concepts, particularly around memory systems, intervention types, and neural mechanisms. The passage's emphasis on interactions between interventions suggests they should be treated as a unified intervention category rather than separate topics."
+  },
+  {
+    "output": "```json\n[\n  \"climate change adaptation\",\n  \"socioeconomic resilience\",\n  \"coastal communities\",\n  \"mixed-methods research\",\n  \"hydrological modeling\",\n  \"ethnographic interviews\",\n  \"sea-level rise projections\",\n  \"machine learning algorithms\",\n  \"satellite data\",\n  \"stakeholder interviews\",\n  \"cultural practices\",\n  \"economic structures\",\n  \"adaptive capacity\",\n  \"infrastructure vulnerability\",\n  \"tidal patterns\",\n  \"storm surge\",\n  \"institutional capacity\",\n  \"social capital\",\n  \"technological resources\",\n  \"geospatial analysis\",\n  \"community-based knowledge systems\",\n  \"coastal processes\",\n  \"governance\",\n  \"equity\",\n  \"environmental risk\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study investigates the intersection of climate change adaptation and socioeconomic resilience in coastal communities by employing mixed-methods research combining quantitative hydrological modeling with qualitative ethnographic interviews. We analyzed sea-level rise projections using machine learning algorithms trained on satellite data spanning three decades, while simultaneously conducting 47 in-depth interviews with local stakeholders to understand how cultural practices and economic structures shape adaptive capacity. Our findings reveal that infrastructure vulnerability correlates not only with physical exposure to tidal patterns and storm surge intensity, but also with institutional capacity, social capital distribution, and access to technological resources. We propose a novel framework integrating geospatial analysis with community-based knowledge systems, demonstrating that effective adaptation requires bridging natural science understanding of coastal processes with social science insights into governance, equity, and behavioral responses to environmental risk."
+      },
+      "solution_criteria": [
+        "Extraction includes topics from natural sciences (sea-level rise, hydrological modeling, storm surge, satellite data, tidal patterns)",
+        "Extraction includes topics from social sciences (socioeconomic resilience, social capital, equity, governance, cultural practices, behavioral responses)",
+        "Extraction includes methodological topics (mixed-methods research, quantitative modeling, qualitative interviews, machine learning, geospatial analysis)",
+        "All extracted topics are formatted as a JSON array of strings"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with an interdisciplinary passage mixing natural sciences, social sciences, and methodology discussions to ensure the prompt can extract topics across diverse academic domains"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. It successfully addresses all secondary criteria by including natural science topics (sea-level rise, hydrological modeling, storm surge, satellite data, tidal patterns), social science topics (socioeconomic resilience, social capital, equity, governance, cultural practices), and methodological topics (mixed-methods research, machine learning, geospatial analysis, ethnographic interviews). The primary deficiency is the omission of 'behavioral responses' which is explicitly mentioned in the final sentence as a key insight. The extraction is otherwise thorough and well-organized, capturing 25 distinct topics from the passage."
+  },
+  {
+    "output": "```json\n[\n  \"Machine learning in clinical diagnostics\",\n  \"Deep neural networks\",\n  \"Diabetic retinopathy detection\",\n  \"Model interpretability\",\n  \"Clinical trust and AI\",\n  \"Algorithmic opacity\",\n  \"Patient autonomy\",\n  \"Informed consent\",\n  \"Healthcare disparities\",\n  \"Demographic bias in AI\",\n  \"Training data bias\",\n  \"Model performance across populations\",\n  \"Computational efficiency vs transparency\",\n  \"Explainable AI\",\n  \"Clinical utility of AI systems\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The proliferation of machine learning algorithms in clinical diagnostics has fundamentally altered medical practice, yet their deployment raises critical questions about interpretability and trust. While deep neural networks achieve 94% accuracy in detecting diabetic retinopathy from retinal images, clinicians struggle to understand which visual features drive these predictions, creating a gap between algorithmic performance and clinical utility. This opacity becomes particularly problematic when considering patient autonomy\u2014physicians cannot adequately explain to patients why a diagnosis was recommended, undermining informed consent. Furthermore, the reliance on training data predominantly sourced from Western populations introduces systematic biases that degrade model performance for underrepresented demographic groups, perpetuating existing healthcare disparities. The tension between computational efficiency and transparency suggests that future clinical AI systems must balance accuracy with explainability, though technical solutions remain nascent."
+      },
+      "solution_criteria": [
+        "Extracts explicit topics directly mentioned (e.g., 'machine learning', 'clinical diagnostics', 'deep neural networks', 'diabetic retinopathy')",
+        "Identifies implicit/inferred conceptual themes requiring inference (e.g., 'algorithmic transparency', 'healthcare equity', 'informed consent', 'bias in AI')",
+        "Distinguishes between surface-level technical details and deeper thematic concerns"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a passage containing implicit topics that require inference versus explicit topic mentions to evaluate whether the prompt extracts only surface-level or deeper conceptual themes"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. It also performs well against secondary criteria by identifying both explicit technical topics (neural networks, diabetic retinopathy detection) and implicit conceptual themes (patient autonomy, healthcare equity, algorithmic transparency). The extraction distinguishes between surface-level details and deeper thematic concerns effectively. The main limitation is minor redundancy in topic selection, though this does not constitute a failure of the stated criteria."
+  }
+]

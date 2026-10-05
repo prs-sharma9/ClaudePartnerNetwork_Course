@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: claude_helper
+Version: 1.0.0
+Requires-Dist: anthropic
+Requires-Dist: python-dotenv
+Dynamic: requires-dist
